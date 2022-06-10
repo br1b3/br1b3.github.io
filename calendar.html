@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="home.html"><img id="headerLogo" src="images/star-command-logo-dynamic.png"></a>
+
+        <a href="young-cadets.html"><button>Young Cadets</button></a>
+        <a href="calendar.html"><button>Training and Events Calendar</button></a>
+        <a href="missions.html"><button>Mission Board</button></a>
+
+        <a href="profile.html"><img id="headerProfile" src="images/Alicia_Hawthorne_square.png"></a>
+        </div> 
+    </header>
+    <div id="mainContainer"> 
+        <div id="popupMenu" class="popup">
+            <button onclick="menuCloseFunction(popupMenu)">X</button>
+            <img id="popupProfilePhoto" src="images/Alicia_Hawthorne_square.png">
+            <a href="profile.html"><h3>Profile</h3></a>
+            <a href="calendar.html"><h3>Training and Events Calendar</h3></a>
+            <a href="missions.html"><h3>Mission Board</h3></a>
+            <a href="young-cadets.html"><h3>Young Cadets Program</h3></a>
+            <a href="locations.html"><h3>Locations</h3></a>
+            <a href="contact.html"><h3>Contact</h3></a>
+            <a href="login.html"><h3>Log Out</h3></a>
+        </div>
+        <nav>
+            <!-- Hide for desktop and mobile (make pop-up menu)-->
+            <button onclick="menuFunction(popupMenu)">☰</button>
+            <a href="home.html"><img src="images/star-command-logo-dynamic.png"></a>
+        </nav>
+        <h1>Training and Event Calendar</h1>
+        <button class="showButton" onclick="showFilter()">i</button>
+        <aside class="popupFilter">
+            <button class="filterButton active" onclick="filterSelection('all')">Show All</button>
+            <button class="filterButton" onclick="filterSelection('training')">Training</button>
+            <button class="filterButton" onclick="filterSelection('semenar')">Semenars</button>
+            <button class="filterButton" onclick="filterSelection('office')">Office Events</button>
+            <button class="runFilterButton" onclick="hideFilter()">Close</button>
+        </aside>
+        <main id="eventCalendar">
+            <hr>
+            <div class="filterDiv calendarSlot training">
+                <h3>Utility Belt Safety Training</h3>
+                <h5>Training</h5>
+                <p>This Training is MANDATORY and will be held in Training Autotorium 9611-B</p>
+                <p>Remote Rangers can attend training online through the employee training portal.</p>
+                <p>Rangers who wish to be Utility Belt certified will need to take the proctored exam within 15 SCTB day cycles of the training event. To sign up for the exam, please indicate that you would like to sit for the exam under the sign up page. You will recieve an email to confirm your Badge ID and Galactic Citizenship card. DO Not forget to complete the verification process at least 1 day cycle prior to the exam. If you have any issues please contact help@starcommand.unv or submit them in the <a href="contact.html">Contact Page</a>.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Combat, Persuasion, and Evasion</h3>
+                <h5>Training</h5>
+                <img src="images/buzz tied up by tiny aliens.jpeg">
+                <p>We've all been there... Lost in an unknown planet with no fuel. Tied up by tiny inhabitants and no escape in sight.</p>
+                <p>Missions don't always go our way. It is important to stay level headed and remember what we trained to do in hairy situations. Lieutenant Kim will be hosting out semi-annual Field Tactics Training. He will be going over standard Combat skills, Deescalation and Persuasion Techniques, and... when all else fails... Evasion manuvers. This training is manditory and all Space Rangers will need to pass Physical Training in order to return to the field. Rangers who do not pass training will be deployed back to the Star Command Training Base for remediation classes.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot office">
+                <h3>Cubical Clean Out and Auction</h3>
+                <h5>Office</h5>
+                <p>Since everyone had a blast the last time we held one of these events, we invite all Star Command members to the Star Command Research Facility for our annual office clean-out!</p>
+                <p>(Pending that we keep the explosions to a minimum...) the Star Command Research Team will be cleaning out their cubicals. The more "interesting" and less useful items the team has come up with in the last orbital cycle will go up on auction for any Star Command member to buy. Please handle all items with caution. Do not forget to sign all release waivers before picking up your auctioned item. All proceeds will be going to the Young Cadets program this year. If you want to learn more or see how you can be a Young Cadets mentor please check our <a href="young-cadets.html">Young Cadets Program Page</a>.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Step Into Greatness</h3>
+                <h5>Semenar</h5>
+                <p>Many have asked and we shall answer...</p>
+                <p>For those in Star Command who are looking to get promoted or make a lateral move into another field, please join us in this year's semenar "Step Into Greatness". We will be talking to everyone on how our promotion structure works, how to get cross company training, and our Shadow program where employees can sit in and experience the day-to-day work life of other departments. We know the process can seem overwhelming but we will be here to support you every step of the way. After the semenar, each employee will be assigned a Sapien Resource Management Counsoler who whill help them through the next steps in their career. It is our hope to take your career here at Star Command to Infinity and Beyond!</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Making First Contact</h3>
+                <h5>Semenar</h5>
+                <p>It seems like every corner of the Universe is teeming with new life. In our ever changing landscape, how do you begin to build a long lasting friendship with other life forms our there?</p>
+                <p>That is a good question. In fact, it is a question we have been tackling for Milliniums. Here at Star Command it can feel like you meet a new face everytime you step one parsec in any direction. That is why we urge you to not miss the upcoming seminar in diplomatic relations and best practices when making first contact with aliens from other Star Systems. Special guest speakers will include the Little Green Men and Space Ranger Sox. You'll learn everything from what to do when you meet a new life form to field-tested skills on how to pick up new lanuages quickly.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Don't Press That Button!</h3>
+                <h5>Semenar</h5>
+                <p>Everyone makes mistakes in the field. Sometimes those mistakes lead to some pretty amazing and terrifying stories.</p>
+                <p>Join us as a panel of Space Ranger Veterans recall some of their most exciting and death defying missions. They will be discussing what their first day of the job was like all the way to the end of their careers as a Ranger. We hope that Rangers, especially you noobies out there, could learn from some of the best Rangers Star Command has ever seen in its ranks. Although the torch has been passed, these gracious guests have been nice enough to come together at Star Comand HQ and answer any and all questions that you may have about the job and even life outside of it.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Spaceship Matenance and Repair</h3>
+                <h5>Training</h5>
+                <p>Don't even think about skipping this training Ranger!</p>
+                <p>It is important to keep those Repair Skills sharp. Captain Annie Skipper and Ranger Dollie Hobbs will testing your skills on Spaceship matenance and repair. They will cover the newer IG-57T models as well as some of the classics. This training is required or all Rangers. Aviation Pilots and Machinery Techs will need to recertify in order to continue working in the field. Pilots and Techs who fail to certify will be redeployed to the Star Command Training Base for remediation classes.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>The World Beyond "Beyond"</h3>
+                <h5>Semenar</h5>
+                <p>As you all know, our motto at Star Command is to go to Infinity and Beyond! Over the Orbital Cycles we have already done so much. So what lies beyond the "beyond" for us?</p>
+                <p>Lieutenant General Nobfang (Space Orc) will be talking through the future of our Star Systems and Star Command's position within it. Although Star Command has brought a new level of peace to the Galaxy there is still a lot of work to be done. We will be expanding the scope of Star Command's resposibilities which also means that a wide range of new jobs will need to be filled. Nobfang has been supportive of our efforts to learn more about the life that lies beyond our star systems. However, the more we explore, the more we need to remain diligent to protect the life forms we've already commited to. "Our efforts will look as much inward as we do outwards," said Lieutenant General Nobfang. She would like all of Star Command to join her as she explains what going Beyond the Beyond looks like.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Work Place Harassment Training</h3>
+                <h5>Training</h5>
+                <p>We know you are going to put this off until the last minutes but...</p>
+                <p>Every year you still have to take the Work Place Harassment Training. You can complete this online through the Star Command Employee Training Portal. Please get it done as soon as possible and keep your hands, finsl, pincers, and tenticles to yourselves.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Emergency Medical Training</h3>
+                <h5>Training</h5>
+                <p>The air is toxic! There is a crack in your visor! What do you do?!?!</p>
+                <p>Don't panic. We will go over that scenario and many others in our EMT training. Since there are many things that can go wrong on a mission, it is important that every Ranger is well versed on how to give medical aid in a range of potentially dangerous situations. EVERY Ranger will need to recertify in EMT training before they re-enter the field. Those who fail to certify will be redeployed to the Star Command Training Base for remediation classes.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+            <div class="filterDiv calendarSlot office">
+                <h3>146th Inter Galatic Lunch-in</h3>
+                <h5>Office</h5>
+                <p>Get your snorkle tanks and grab your pool noodles! The Inter Galactic Lunch-in is here!</p>
+                <p>This Lunch-in Event will be one to remember. Held out of the Star Command Training Base, there will be a mass of events and games. We are talking a full Space Carnival and the best BBQ catered by Glorb Gurbs. Be sure to sign up within the next few star cycles to secure a spot for yourself and your guests.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>Inter Galactic</p>
+                <p>Sapien Recourses</p>
+                <p>888.888.8888</p>
+                </div>
+                <div>
+                <a href="locations.html">Locations</a>
+                <br>
+                <a href="contact.html">Contact Support</a>
+                <br>
+                <a href="FAQs.html">FAQs</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

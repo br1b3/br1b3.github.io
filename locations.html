@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="home.html"><img id="headerLogo" src="images/star-command-logo-dynamic.png"></a>
+
+            <a href="young-cadets.html"><button>Young Cadets</button></a>
+            <a href="calendar.html"><button>Training and Events Calendar</button></a>
+            <a href="missions.html"><button>Mission Board</button></a>
+
+            <a href="profile.html"><img id="headerProfile" src="images/Alicia_Hawthorne_square.png"></a>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <div id="popupMenu" class="popup">
+            <button onclick="menuCloseFunction(popupMenu)">X</button>
+            <img id="popupProfilePhoto" src="images/Alicia_Hawthorne_square.png">
+            <a href="profile.html">
+                <h3>Profile</h3>
+            </a>
+            <a href="calendar.html">
+                <h3>Training and Events Calendar</h3>
+            </a>
+            <a href="missions.html">
+                <h3>Mission Board</h3>
+            </a>
+            <a href="young-cadets.html">
+                <h3>Young Cadets Program</h3>
+            </a>
+            <a href="locations.html">
+                <h3>Locations</h3>
+            </a>
+            <a href="contact.html">
+                <h3>Contact</h3>
+            </a>
+            <a href="login.html">
+                <h3>Log Out</h3>
+            </a>
+        </div>
+        <nav>
+            <!-- Hide for desktop and mobile (make pop-up menu)-->
+            <button onclick="menuFunction(popupMenu)">☰</button>
+            <a href="home.html"><img src="images/star-command-logo-dynamic.png"></a>
+        </nav>
+        <div id="locationMap">
+            <img id="map" src="images/Galaxy1.jpeg">
+            <img class="blipA" src="images/map blip A.png">
+            <img class="blipB" src="images/map blip B.png">
+            <img class="blipC" src="images/map blip C.png">
+            <div class="locationDiv">
+                <img class="blipA" src="images/map blip A.png">
+                <div>
+                    <h3>Star Command HQ</h3>
+                    <p>1314 Alpha Centari,</p>
+                    <p>Outer Belt Sector 7</p>
+                    <p>Star System 84:14C8 - MilkyWay</p>
+                    <p>(+871) 888.987.2252</p>
+                </div>
+            </div>
+            <div class="locationDiv">
+                <img class="blipB" src="images/map blip B.png">
+                <div>
+                    <h3>Star Command Training Outpost</h3>
+                    <p>22 Outpost Complex Center</p>
+                    <p>Inner Belt Sector 148</p>
+                    <p>Star System 84:14C8 - MilkyWay</p>
+                    <p>(+286) 774.221.3482</p>
+                </div>
+            </div>
+            <div class="locationDiv">
+                <img class="blipC" src="images/map blip C.png">
+                <div>
+                    <h3>Star Command Research Facility</h3>
+                    <p>Moon 6 of Planet Fasma</p>
+                    <p>Star Grouping 9438</p>
+                    <p>Interstellar Space</p>
+                    <p>-- Ping Only --</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>Inter Galactic</p>
+                <p>Sapien Recourses</p>
+                <p>888.888.8888</p>
+            </div>
+            <div>
+                <a href="locations.html">Locations</a>
+                <br>
+                <a href="contact.html">Contact Support</a>
+                <br>
+                <a href="FAQs.html">FAQs</a>
+            </div>
+    </div>
+    </footer>
+    </div>
+</body>
+
+</html>

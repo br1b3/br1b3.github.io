@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: none;
+    border-bottom: 3px solid #203855;
+}
+
+footer {
+    height: 80px;
+    background-color: #203855;
+    padding-bottom: 20px;
+    border-top: 3px solid #203855;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    width: 320px;
+    margin: auto;
+}
+
+#mainContainer {
+    background-color: white;
+    width: 320px;
+    margin: auto;
+    height: 100%;
+}
+
+#mainLoginContainer {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    border-bottom: 3px solid #203855;
+}
+
+nav>button {
+    background-color: rgba(255, 255, 255, 0);
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    color: #203855;
+}
+
+nav>a>img {
+    margin: auto;
+    margin-left: 55px;
+    width: 100px;
+}
+
+#popupMenu {
+    width: 320px;
+    height: 100%;
+    background-color: #919191f6;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    visibility: hidden;
+}
+
+#popupMenu>button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #203855;
+    border-radius: 50px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#popupMenu>img {
+    width: 150px;
+    margin-top: 60px;
+    margin-left: 45px;
+    border: 3px solid #203855;
+    border-radius: 100px;
+}
+
+#popupMenu>a>h3 {
+    margin-top: 30px;
+    color: #203855;
+}
+
+#popupMenu>a {
+    text-decoration: none;
+}
+
+.slideshowContainer {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #717171;
+}
+
+.mainSlides>img {
+    height: 200px;
+}
+
+.mainSlides {
+    display: none;
+}
+
+.mainSlides:first-of-type {
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    transform: translateY(-120px);
+}
+
+.next {
+    transform: translate(286px, -120px);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideText {
+    color: #f2f2f2;
+    font-size: 15px;
+    background-color: #203855;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideNumber {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.mainSlides>img {
+    width: 320px;
+}
+
+article:first-of-type {
+    margin-top: 30px;
+}
+
+article {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #203855;
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+article>h3,
+article>h2 {
+    color: #203855;
+    margin-bottom: 5px;
+}
+
+article>p {
+    color: #919191;
+}
+
+/*login screen*/
+#loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #203855;
+    background: linear-gradient(220deg, rgb(26, 26, 27) 16%, rgb(49, 83, 125) 70%, rgb(120, 131, 142) 93%);
+    padding-top: 50px;
+}
+
+#loginContainer>h1 {
+    color: white;
+    margin-top: 30px;
+}
+
+#login>label,
+#login>button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#login>input {
+    text-align: center;
+}
+
+#login>button {
+    background-color: #2FCC34;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+#loginContainer>a {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#loginLogo {
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.showButton {
+    border-radius: 100%;
+    padding: 2px 8px;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(260px, -30px);
+}
+
+.calendarSlot,
+.jobSlot {
+    border: 3px solid black;
+    border-top: none;
+    width: 250px;
+    margin: auto;
+}
+
+#missionBoard>hr,
+#eventCalendar>hr {
+    width: 253px;
+    border: 1.5px solid black;
+    margin: auto;
+}
+
+.calendarSlot>p,
+.jobSlot>p {
+    font-size: 12px;
+}
+
+.calendarSlot>h3,
+.jobSlot>h3 {
+    font-size: 18px;
+}
+
+.popupFilter {
+    width: 320px;
+    height: 100%;
+    background-color: rgba(247, 255, 255, 0.655);
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    visibility: hidden;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filterButton {
+    border-radius: 5px;
+    ;
+}
+
+.filterButton:hover {
+    background-color: #f2d6ff;
+}
+
+.filterButton.active {
+    background-color: #f2d6;
+    color: white;
+}
+
+#editProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profilePhoto {
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 50px;
+    border: 3px solid #203855;
+}
+
+.edit {
+    border-radius: 15px;
+    padding: 3px 7px;
+    border: 2px solid #203855;
+    color: #203855;
+    background-color: transparent;
+    font-size: 16px;
+    transform: translate(110px, -30px);
+}
+
+#editProfile>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#editProfile>form>input {
+    display: block;
+}
+
+#profileDetails {
+    text-align: center;
+    margin: 30px 0px;
+    color: #203855;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#name,
+#rank,
+#address1,
+#address2,
+#address3,
+#email {
+    color: #919191;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.profileLinks {
+    color: #203855;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.profileLinks:last-of-type {
+    margin-bottom: 50px;
+}
+
+#missionDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#missionImage {
+    width: 250px;
+    margin-top: 20px;
+}
+
+#mainContainer>h1 {
+    text-align: center;
+}
+
+footer>div>a {
+    text-decoration: none;
+}
+
+footer>div>p,
+footer>div>a {
+    color: white;
+}
+
+footer>div {
+    margin-left: 20px;
+}
+
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contactUs>form>label,
+#contactUs>form>input,
+#contactUs>form>select,
+#contactUs>form>textarea {
+    display: block;
+    width: 100%;
+}
+#contactUs>form>label {
+    margin-top: 10px;
+}
+#contactUs>form>button {
+    margin: 10px 0 30px 0;
+}
+#contactUs > h1 {
+    margin: 10px 0 30px 0;
+}
+#youthPoster {
+    width: 320px;
+    margin: 0px 0px 30px 0px;
+}
+#youngCadets {
+    margin: 20px 0 50px 0;
+}
+#youngCadets > p {
+    margin-top: 5px;
+    color:#919191;
+}
+#youngCadets > h3 {
+    margin-top: 10px;
+    color:#203855;
+}
+#youngCadets > h2 {
+    color:#203855;
+}
+#locationMap {
+    margin: 20px 0 50px 0;
+}
+#map {
+    width: 320px;
+}
+.blipA, .blipB, .blipC {
+    width: 20px;
+}
+#locationMap > .blipA, 
+#locationMap > .blipB, 
+#locationMap > .blipC {
+    position: absolute;
+    z-index: 1;
+}
+#locationMap > .blipA {
+    transform: translate(-138px, 23px);
+}
+#locationMap > .blipB {
+    transform: translate(-240px, 98px);
+}#locationMap > .blipC {
+    transform: translate(-29px, 114px);
+}
+.locationDiv {
+    background-color: #203855;
+    width: 250;
+    height: 200px;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+}
+.locationDiv > .blipA, 
+.locationDiv > .blipB, 
+.locationDiv > .blipC {
+    padding: 3px 8px;
+    border: 3px solid rgb(221, 8, 8);
+    background-color: white;
+    height: 30px;
+    margin-right: 20px;
+}
+.locationDiv > div > h3 {
+    color: rgb(221, 8, 8);
+}
+.locationDiv > div > p {
+    color: white;
+    margin-top: 10px;
+}
+.calendarSlot > img {
+    width: 200px;
+}
+
+
+
+/*Tablets*/
+@media only screen and (min-width: 600px) {
+    #mainContainer {
+        width: 600px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header>div {
+        width: 600px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>div>a>button {
+        color: white;
+        border: 1px solid #203855;
+        border-radius: 5px;
+        padding: 3px 5px;
+        position: relative;
+        margin-top: 15px;
+        background-color: #919191;
+
+    }
+
+    #headerLogo {
+        width: 90px;
+        height: 50px;
+    }
+
+    #headerProfile {
+        width: 50px;
+        border-radius: 100%;
+        border: 2px solid #203855;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer>div:first-of-type {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .showFilter {
+        display: none;
+    }
+
+    .slideshowContainer {
+        height: 350px;
+    }
+
+    .mainSlides>img {
+        height: 350px;
+        width: 600px;
+    }
+
+    .prev,
+    .next {
+        transform: translateY(-200px);
+        font-size: 30px;
+    }
+
+    .next {
+        transform: translate(563px, -200px);
+    }
+
+    .slideText {
+        bottom: 20px;
+        font-size: 18px;
+        padding: 9px 0px;
+    }
+
+    #missionBoard>hr,
+    #eventCalendar>hr {
+        width: 597px;
+    }
+
+    .calendarSlot,
+    .jobSlot {
+        width: 594px;
+    }
+
+    h1 {
+        margin: 10px 0px 30px 0px;
+    }
+
+    .showButton {
+        transform: translate(575px, -25px);
+    }
+
+    #missionImage {
+        width: 600px;
+    }
+    form {
+        width: 500px;
+    }
+    #youngCadets {
+        text-align: center;
+    }
+    #youthPoster {
+        width: 200px;
+        float: left;
+        padding-right: 10px;
+    }
+    #youngCadets > h2, #youngCadets > h3,
+    #youngCadets > p {
+        text-align: justify;
+    }
+    #youngCadets > h2 {
+        padding-top: 10px;
+    }
+    #youngCadets > h2 {
+        font-size: 24px;
+    }
+    #youngCadets > h3 {
+        font-size: 20px;
+    }
+    #youngCadets > p {
+        font-size: 18px;
+    }
+    #map {
+        width: 600px;
+    }
+    #locationMap > .blipA {
+        transform: translate(350px, 67px);
+    }
+    #locationMap > .blipB {
+        transform: translate(160px, 208px);
+    }
+    #locationMap > .blipC {
+        transform: translate(555px, 240px);
+    }
+    .locationDiv > .blipA, 
+    .locationDiv > .blipB, 
+    .locationDiv > .blipC {
+        padding: 3px 8px;
+        border: 3px solid rgb(221, 8, 8);
+        background-color: white;
+        height: 30px;
+        margin-right: 20px;
+    }
+    #locationMap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .locationDiv, .locationDiv > div {
+        width: 250px;
+    }
+}
+
+
+
+/*Desktops*/
+@media only screen and (min-width: 992px) {
+    #mainContainer {
+        width: 900px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    header>div {
+        width: 900px;
+    }
+
+    #headerLogo {
+        width: 110px;
+    }
+
+    #headerProfile {
+        width: 60px;
+        margin-top: 0px;
+    }
+
+    header>div>a>button {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    .slideshowContainer {
+        height: 500px;
+    }
+
+    .mainSlides>img {
+        height: 500px;
+        width: 900px;
+    }
+
+    .prev,
+    .next {
+        transform: translateY(-300px);
+        font-size: 40px;
+    }
+
+    .next {
+        transform: translate(857px, -300px);
+    }
+
+    .slideText {
+        bottom: 40px;
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    #missionBoard>hr,
+    #eventCalendar>hr {
+        width: 897px;
+    }
+
+    .calendarSlot,
+    .jobSlot {
+        width: 894px;
+    }
+
+    .showButton {
+        transform: translate(875px, -25px);
+    }
+
+    #missionImage {
+        width: 900px;
+    }
+    #youthPoster {
+        width: 200px;
+    }
+    #youngCadets > h2 {
+        font-size: 32px;
+    }
+    #youngCadets > h3 {
+        font-size: 24px;
+    }
+    #youngCadets > p {
+        font-size: 20px;
+    }
+    #map {
+        width: 900px;
+    }
+    #locationMap > .blipA {
+        transform: translate(529px, 115px);
+    }
+    #locationMap > .blipB {
+        transform: translate(245px, 328px);
+    }
+    #locationMap > .blipC {
+        transform: translate(837px, 375px);
+    }
+}

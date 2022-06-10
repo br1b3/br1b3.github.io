@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="home.html"><img id="headerLogo" src="images/star-command-logo-dynamic.png"></a>
+
+        <a href="young-cadets.html"><button>Young Cadets</button></a>
+        <a href="calendar.html"><button>Training and Events Calendar</button></a>
+        <a href="missions.html"><button>Mission Board</button></a>
+
+        <a href="profile.html"><img id="headerProfile" src="images/Alicia_Hawthorne_square.png"></a>
+        </div> 
+    </header>
+    <div id="mainContainer"> 
+        <div id="popupMenu" class="popup">
+            <button onclick="menuCloseFunction(popupMenu)">X</button>
+            <img id="popupProfilePhoto" src="images/Alicia_Hawthorne_square.png">
+            <a href="profile.html"><h3>Profile</h3></a>
+            <a href="calendar.html"><h3>Training and Events Calendar</h3></a>
+            <a href="missions.html"><h3>Mission Board</h3></a>
+            <a href="young-cadets.html"><h3>Young Cadets Program</h3></a>
+            <a href="locations.html"><h3>Locations</h3></a>
+            <a href="contact.html"><h3>Contact</h3></a>
+            <a href="login.html"><h3>Log Out</h3></a>
+        </div>
+        <nav>
+            <!-- Hide for desktop and mobile (make pop-up menu)-->
+            <button onclick="menuFunction(popupMenu)">☰</button>
+            <a href="home.html"><img src="images/star-command-logo-dynamic.png"></a>
+        </nav>
+        <div id="missionDiv">
+            <img id="missionImage" src="images/buzz-lightyear_saving_alien.jpeg">
+        </div>
+        <h1>Galactic Missions Board</h1>
+        <button class="showButton" onclick="showFilter()">i</button>
+        <aside class="popupFilter">
+            <button class="filterButton active" onclick="filterSelection('all')">Show All</button>
+            <button class="filterButton" onclick="filterSelection('diplomatic')">Diplomatic</button>
+            <button class="filterButton" onclick="filterSelection('machinery')">Machinery</button>
+            <button class="filterButton" onclick="filterSelection('research')">Communications</button>
+            <button class="filterButton" onclick="filterSelection('infantry')">Infantry</button>
+            <button class="filterButton" onclick="filterSelection('aviation')">Aviation</button>
+            <button class="runFilterButton" onclick="hideFilter()">Close</button>
+        </aside>
+        <main id="missionBoard">
+            <hr>
+            <div class="filterDiv jobSlot diplomatic">
+                <h3>Liason Needed To Work Out Trade Treaty</h3>
+                <h5>Diplomatic</h5>
+                <p></p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot research">
+                <h3>Fungi Field Researcher</h3>
+                <h5>Research</h5>
+                <p>Star Command needs a field rearcher to investigate the properties and make up of the fungi on the 3rd and 7th Artillian Moons.</p>
+                <p>This will be a 3 year deployment. The first year will be spent on a Popup Base in the Artillian Moon Belt. The rest of the time, employee will be stationed at the Star Command Research Facility.</p>
+                <p>Pre-Qualifications</p>
+                <ul>
+                    <li>2+ Years of Space Botany Research Training</li>
+                    <li>Emergency Medical Training Certification</li>
+                    <li>Inter-Species Conflict Resolution Training (Can be taken after application is accepted and completed before the first day on the job</li>
+                </ul>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot machinery">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot diplomatic">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot infantry">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot machinery">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot machinery">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot diplomatic">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot aviation">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot infantry">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+            <div class="filterDiv jobSlot research">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="apply.html"><button>Apply</button></a>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>Inter Galactic</p>
+                <p>Sapien Recourses</p>
+                <p>888.888.8888</p>
+                </div>
+                <div>
+                <a href="locations.html">Locations</a>
+                <br>
+                <a href="contact.html">Contact Support</a>
+                <br>
+                <a href="FAQs.html">FAQs</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
