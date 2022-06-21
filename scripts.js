@@ -8,6 +8,11 @@ window.addEventListener('load', (event) => {
     })
 })
 
+//users
+let user1 = false;
+let user2 = false;
+let user3 = false;
+
 //nav pop-up menu
 function menuFunction(item) {
     item.style.visibility = 'visible'
@@ -56,18 +61,36 @@ function loginFunction() {
     var username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    
-    console.log("boop");
     console.log(username);
 
     if (username === "ahawthorne@starcommand.unv" && password === "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        user3 = true;
+        console.log(user3);
+    }
+    else if (username === "user1" && password === "PX"){
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+        user1 = true;
+        console.log(user1);
+    }
+    else if (username === "user2" && password === "PX"){
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+        user2 = true;
+        console.log(user2);
     }
     else {
         alert("Wrong Username and Password.");
     }
 }
 
+//log out
+function logoutFunction() {
+    setTimeout(() => { window.location.href="login.html"; }, 500);
+        user1 = false;
+        user2 = false;
+        user3 = false;
+        console.log(user1, user2, user3);
+}
 
 //filter popup
 function showFilter(){
