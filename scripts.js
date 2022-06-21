@@ -175,5 +175,5 @@ function contactForm(){
 
     console.log(title + ", " + name + ", "+ email + ", " + issue + ", " + explain);
 
-    window.BeforeUnloadEvent (alert("continue?"));
+    alert("continue?");
 }
