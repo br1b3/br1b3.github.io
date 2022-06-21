@@ -164,3 +164,16 @@ function editForm(item) {
 function saveForm(item) {
 item.style.visibility = 'hidden'
 }*/
+
+//contact form
+function contactForm(){
+    let title = document.getElementById("contactTitle").value;
+    let name = document.getElementById("contactName").value;
+    let email = document.getElementById("contactEmail").value;
+    let issue = document.getElementById("contactIssue").value;
+    let explain = document.getElementById("contactText").value;
+
+    console.log(title + ", " + name + ", "+ email + ", " + issue + ", " + explain);
+
+    window.BeforeUnloadEvent (alert("continue?"));
+}

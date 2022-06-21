@@ -41,13 +41,13 @@
             <h1>Need Help?</h1>
             <form>
                 <label for="title">Title</label>
-                <input type="text">
+                <input type="text" id="contactTitle">
                 <label for="name">Name</label>
-                <input type="text">
+                <input type="text" id="contactName">
                 <label for="email">Email</label>
-                <input type="email">
+                <input type="email" id="contactEmail">
                 <label for="issue">Issue</label>
-                <select>
+                <select id="contactIssue">
                     <option>Issue 1</option>
                     <option>Issue 2</option>
                     <option>Issue 3</option>
@@ -55,8 +55,8 @@
                     <option>Issue 5</option>
                 </select>
                 <label for="explain">How Can We Help?</label>
-                <textarea rows="15" cols="30"></textarea>
-                <button type="submit">Submit</button>
+                <textarea rows="15" cols="30" id="contactText"></textarea>
+                <button type="submit" onclick="contactForm()">Submit</button>
             </form>
         </main>
         <footer>
