@@ -101,14 +101,14 @@ function loginFunction() {
     {
     //User Fields
     "id": user1.userId, // Required for logged in app users
-    "email": "email",
-    "firstName": "Bob",
-    "lastName": "Hatchett"
+    "email": "weeeeeee",
+    "firstName": "YoYo",
+    "lastName": "Ma"
     },
     {
     //Account Fields
-    "id": "cheese", //Required
-    "name": "Beta"
+    "id": "chips", //Required
+    "name": "Alpha"
     });
 }
 
