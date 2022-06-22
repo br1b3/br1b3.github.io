@@ -69,14 +69,18 @@ const user2 = {
     password: "PX",
     email: "user2@starcommand.unv",
     firstName: "Mitty",
-    lastName: "Tilbert"
+    lastName: "Tilbert",
+    account: "MTilbert",
+    accountName: "Tilbert, Mitty"
 };
 const user3 = {
     userId: "user3",
     password: "PX",
     email: "user3@starcommand.unv",
     firstName: "Alishia",
-    lastName: "Hawthorne"
+    lastName: "Hawthorne",
+    account: "AHawthorne",
+    accountName: "Hawthorne, Alishia"
 };
 
 //login
@@ -101,11 +105,37 @@ function loginFunction() {
         "name": user1.accountName
         });
     }
-    else if (username === "user2" && password === "PX"){
+    else if (username === user2.userId && password === user2.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": user2.userId, // Required for logged in app users
+        "email": user2.email,
+        "firstName": user2.firstName,
+        "lastName": user2.lastName
+        },
+        {
+        //Account Fields
+        "id": user2.account, //Required
+        "name": user2.accountName
+        });
     }
-    else if (username === "user3" && password === "PX"){
+    else if (username === user3.userId && password === user3.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": user3.userId, // Required for logged in app users
+        "email": user3.email,
+        "firstName": user3.firstName,
+        "lastName": user3.lastName
+        },
+        {
+        //Account Fields
+        "id": user3.account, //Required
+        "name": user3.accountName
+        });
     }
     else {
         alert("Wrong Username and Password.");
