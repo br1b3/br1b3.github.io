@@ -126,10 +126,6 @@ function loginFunction() {
 //log out
 function logoutFunction() {
     setTimeout(() => { window.location.href="index.html"; }, 500);
-        user1 = false;
-        user2 = false;
-        user3 = false;
-        console.log(user1, user2, user3);
 }
 
 //filter popup
