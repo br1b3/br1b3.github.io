@@ -61,11 +61,31 @@ function loginFunction() {
     var username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
+    const user1 = {
+        userId: "user1",
+        password: "PX",
+        email: "user1@starcommand.unv",
+        firstName: "Jackson",
+        lastName: "LaRoe"
+    };
+    const user2 = {
+        userId: "user2",
+        password: "PX",
+        email: "user2@starcommand.unv",
+        firstName: "Mitty",
+        lastName: "Tilbert"
+    };
+    const user3 = {
+        userId: "user3",
+        password: "PX",
+        email: "user3@starcommand.unv",
+        firstName: "Alishia",
+        lastName: "Hawthorne"
+    };
 
-    if (username === "ahawthorne@starcommand.unv" && password === "PX"){
+
+    if (username === user1.userID && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        user3 = true;
-        console.log(user3);
     }
     else if (username === "user1" && password === "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
@@ -85,20 +105,15 @@ function loginFunction() {
     aptrinsic("identify",
     {
     //User Fields
-    "id": "unique-user-id", // Required for logged in app users
-    "email": "userEmail@address.com",
-    "firstName": "John",
-    "lastName": "Smith",
-    "signUpDate": 1522697426479, //unix time in ms
-    "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
-    "price" : 95.5,
-    "userHash": "" // optional transient for HMAC identification
+    "id": userId, // Required for logged in app users
+    "email": email,
+    "firstName": firstName,
+    "lastName": lastName
     },
     {
     //Account Fields
-    "id":"IBM", //Required
-    "name":"International Business Machine",
-    "Program": "Platinum" // flat custom attributes
+    "id":userID, //Required
+    "name": firstName + " "+ lastName + "of Star Command"
     });
 }
 
