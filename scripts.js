@@ -102,7 +102,7 @@ function loginFunction() {
     {
     //User Fields
     "id": user1.userId.toString, // Required for logged in app users
-    "email": user1.email.toString,
+    "email": "dummy data",
     "firstName": user1.firstName.toString,
     "lastName": user1.lastName.toString
     },
