@@ -9,9 +9,9 @@ window.addEventListener('load', (event) => {
 })
 
 //users
-let user1 = false;
-let user2 = false;
-let user3 = false;
+//let user1 = false;
+//let user2 = false;
+//let user3 = false;
 
 //nav pop-up menu
 function menuFunction(item) {
@@ -87,15 +87,11 @@ function loginFunction() {
     if (username === user1.userID && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
-    else if (username === "user1" && password === "PX"){
-        setTimeout(() => { window.location.href="home.html"; }, 500);
-        user1 = true;
-        console.log(user1);
-    }
     else if (username === "user2" && password === "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        user2 = true;
-        console.log(user2);
+    }
+    else if (username === "user3" && password === "PX"){
+        setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else {
         alert("Wrong Username and Password.");
