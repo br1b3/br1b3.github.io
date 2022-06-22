@@ -60,7 +60,9 @@ const user1 = {
     password: "PX",
     email: "user1@starcommand.unv",
     firstName: "Jackson",
-    lastName: "LaRoe"
+    lastName: "LaRoe",
+    account: "JLaroe",
+    accountName: "LaRoe, Jackson"
 };
 const user2 = {
     userId: "user2",
@@ -84,7 +86,20 @@ function loginFunction() {
 
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": user1.userId, // Required for logged in app users
+        "email": user1.email,
+        "firstName": user1.firstName,
+        "lastName": user1.lastName
+        },
+        {
+        //Account Fields
+        "id": user1.account, //Required
+        "name": user1.accountName
+        });
     }
     else if (username === "user2" && password === "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
@@ -95,21 +110,6 @@ function loginFunction() {
     else {
         alert("Wrong Username and Password.");
     }
-
-    //passing user and account objects:
-    aptrinsic("identify",
-    {
-    //User Fields
-    "id": user1.userId, // Required for logged in app users
-    "email": "weeeeeee",
-    "firstName": "YoYo",
-    "lastName": "Ma"
-    },
-    {
-    //Account Fields
-    "id": "chips", //Required
-    "name": "Alpha"
-    });
 }
 
 //log out
