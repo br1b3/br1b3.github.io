@@ -83,7 +83,7 @@ function loginFunction() {
         lastName: "Hawthorne"
     };
 
-    if (username === user1.userId && password === users1.password){
+    if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
         
     }
