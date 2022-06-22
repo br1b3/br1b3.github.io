@@ -84,7 +84,7 @@ function loginFunction() {
     };
 
 
-    if (username === user1.userID && password === user1.password){
+    if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else if (username === "user2" && password === "PX"){
