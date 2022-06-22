@@ -55,7 +55,7 @@ function showSlides(n) {
 }
 
 
-/*const user1 = {
+const user1 = {
     userId: "user1",
     password: "PX",
     email: "user1@starcommand.unv",
@@ -75,7 +75,7 @@ const user3 = {
     email: "user3@starcommand.unv",
     firstName: "Alishia",
     lastName: "Hawthorne"
-};*/
+};
 
 //login
 function loginFunction() {
