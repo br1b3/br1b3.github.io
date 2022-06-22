@@ -55,7 +55,7 @@ function showSlides(n) {
 }
 
 
-const user1 = {
+/*const user1 = {
     userId: "user1",
     password: "PX",
     email: "user1@starcommand.unv",
@@ -75,14 +75,12 @@ const user3 = {
     email: "user3@starcommand.unv",
     firstName: "Alishia",
     lastName: "Hawthorne"
-};
+};*/
 
 //login
 function loginFunction() {
     var username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
-
-    
 
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
@@ -102,15 +100,15 @@ function loginFunction() {
     aptrinsic("identify",
     {
     //User Fields
-    "id": "test2", // Required for logged in app users
-    "email": "electric boogaloo",
+    "id": user1.userId, // Required for logged in app users
+    "email": "email",
     "firstName": "Bob",
     "lastName": "Hatchett"
     },
     {
     //Account Fields
-    "id": "account", //Required
-    "name": "Star Command"
+    "id": "cheese", //Required
+    "name": "Beta"
     });
 }
 
