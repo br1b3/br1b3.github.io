@@ -83,17 +83,7 @@ function loginFunction() {
         lastName: "Hawthorne"
     };
 
-    const users = [];
-    users[0] = user1;
-    users[1] = user2;
-    users[2] = user3;
-
-    users.forEach(user => {
-        if (username === users.userId && password === users.password){
-            console.log("got it");}
-        });
-
-    /*if (username === users[].userId && password === users[].password){
+    if (username === user1.userId && password === users1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
         
     }
@@ -105,21 +95,21 @@ function loginFunction() {
     }
     else {
         alert("Wrong Username and Password.");
-    }*/
+    }
 
     //passing user and account objects:
     aptrinsic("identify",
     {
     //User Fields
     "id": user1.userId.toString, // Required for logged in app users
-    "email": email,
-    "firstName": firstName,
-    "lastName": lastName
+    "email": user1.email.toString,
+    "firstName": user1.firstName.toString,
+    "lastName": user1.lastName.toString
     },
     {
     //Account Fields
     "id": user1.userId.toString, //Required
-    "name": firstName + " "+ lastName + "of Star Command"
+    "name": "Star Command"
     });
 }
 
