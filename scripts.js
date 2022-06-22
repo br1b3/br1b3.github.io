@@ -83,9 +83,16 @@ function loginFunction() {
         lastName: "Hawthorne"
     };
 
+    const users = [user1, user2, user3];
+   // users[0] = user1;
+    //users[1] = user2;
+    //users[2] = user3;
+
+    return users.find(Object.userId);
 
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        
     }
     else if (username === "user2" && password === "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
