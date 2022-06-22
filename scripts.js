@@ -144,6 +144,7 @@ function loginFunction() {
 
 //log out
 function logoutFunction() {
+    window.aptrinsic('reset');
     setTimeout(() => { window.location.href="index.html"; }, 500);
 }
 
