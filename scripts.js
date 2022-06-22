@@ -83,14 +83,17 @@ function loginFunction() {
         lastName: "Hawthorne"
     };
 
-    const users = [user1, user2, user3];
-   // users[0] = user1;
-    //users[1] = user2;
-    //users[2] = user3;
+    const users = [];
+    users[0] = user1;
+    users[1] = user2;
+    users[2] = user3;
 
-    console.log(users.userId);
+    users.forEach(user => {
+        if (username === users.userId && password === users.password){
+            console.log("got it");}
+        });
 
-    if (username === user1.userId && password === user1.password){
+    /*if (username === users[].userId && password === users[].password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
         
     }
@@ -102,7 +105,7 @@ function loginFunction() {
     }
     else {
         alert("Wrong Username and Password.");
-    }
+    }*/
 
     //passing user and account objects:
     aptrinsic("identify",
