@@ -101,7 +101,7 @@ function loginFunction() {
     aptrinsic("identify",
     {
     //User Fields
-    "id": user1.userId, // Required for logged in app users
+    "id": user1.userId.toString, // Required for logged in app users
     "email": email,
     "firstName": firstName,
     "lastName": lastName
