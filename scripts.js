@@ -88,7 +88,7 @@ function loginFunction() {
     //users[1] = user2;
     //users[2] = user3;
 
-    alert(users.find(Object.userId));
+    console.log(users.userId);
 
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
