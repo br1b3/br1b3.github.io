@@ -108,7 +108,7 @@ function loginFunction() {
     },
     {
     //Account Fields
-    "id":userID, //Required
+    "id":userId, //Required
     "name": firstName + " "+ lastName + "of Star Command"
     });
 }
