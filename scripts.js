@@ -55,33 +55,34 @@ function showSlides(n) {
 }
 
 
+const user1 = {
+    userId: "user1",
+    password: "PX",
+    email: "user1@starcommand.unv",
+    firstName: "Jackson",
+    lastName: "LaRoe"
+};
+const user2 = {
+    userId: "user2",
+    password: "PX",
+    email: "user2@starcommand.unv",
+    firstName: "Mitty",
+    lastName: "Tilbert"
+};
+const user3 = {
+    userId: "user3",
+    password: "PX",
+    email: "user3@starcommand.unv",
+    firstName: "Alishia",
+    lastName: "Hawthorne"
+};
 
 //login
 function loginFunction() {
     var username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    const user1 = {
-        userId: "user1",
-        password: "PX",
-        email: "user1@starcommand.unv",
-        firstName: "Jackson",
-        lastName: "LaRoe"
-    };
-    const user2 = {
-        userId: "user2",
-        password: "PX",
-        email: "user2@starcommand.unv",
-        firstName: "Mitty",
-        lastName: "Tilbert"
-    };
-    const user3 = {
-        userId: "user3",
-        password: "PX",
-        email: "user3@starcommand.unv",
-        firstName: "Alishia",
-        lastName: "Hawthorne"
-    };
+    
 
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
