@@ -102,10 +102,10 @@ function loginFunction() {
     aptrinsic("identify",
     {
     //User Fields
-    "id": "test", // Required for logged in app users
-    "email": "test email",
-    "firstName": "Jane",
-    "lastName": "Doe"
+    "id": "test2", // Required for logged in app users
+    "email": "electric boogaloo",
+    "firstName": "Bob",
+    "lastName": "Hatchett"
     },
     {
     //Account Fields
