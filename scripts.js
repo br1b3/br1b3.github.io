@@ -103,7 +103,7 @@ function loginFunction() {
     {
     //User Fields
     "id": "test", // Required for logged in app users
-    "email": "dummy data",
+    "email": "test email",
     "firstName": "Jane",
     "lastName": "Doe"
     },
