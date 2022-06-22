@@ -101,14 +101,14 @@ function loginFunction() {
     aptrinsic("identify",
     {
     //User Fields
-    "id": "dummy", // Required for logged in app users
+    "id": user1.userId.toString, // Required for logged in app users
     "email": email,
     "firstName": firstName,
     "lastName": lastName
     },
     {
     //Account Fields
-    "id": "dummydata", //Required
+    "id": user1.userId.toString, //Required
     "name": firstName + " "+ lastName + "of Star Command"
     });
 }
