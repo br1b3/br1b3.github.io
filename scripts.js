@@ -236,6 +236,7 @@ function contactForm(){
     let explain = document.getElementById("contactText").value;
 
     console.log(title + ", " + name + ", "+ email + ", " + issue + ", " + explain);
+    aptrinsic ('track', 'contactForm', {"Title":title, "Name":name, "Email":email, "Issue":issue, "Text":explain});
 
     alert("continue?");
 }
