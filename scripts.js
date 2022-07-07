@@ -240,3 +240,7 @@ function contactForm(){
 
     alert("continue?");
 }
+
+function sayHello(){
+    alert("Bonjour!");
+}
