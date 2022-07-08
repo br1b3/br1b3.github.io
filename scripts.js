@@ -244,3 +244,7 @@ function contactForm(){
 function sayHello(){
     alert("Bonjour!");
 }
+
+function pushTheRedButton(){
+    aptrinsic ('track', 'redButton', {"Color": "red"});
+}
