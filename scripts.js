@@ -250,5 +250,8 @@ function sayHello(){
 }
 
 function pushTheRedButton(){
-    aptrinsic ('track', 'redButton', {"Color": "red"});
+    aptrinsic ('track', 'redButton1', {"Color": "red"});
 }
+
+//KC Bot API Call
+aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
