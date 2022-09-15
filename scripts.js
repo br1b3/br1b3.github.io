@@ -259,4 +259,5 @@ aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
 
 function hoverEvent(){
     aptrinsic ('track', 'hover', {"Hover": true});
+    console.log("it hovers");
 }
