@@ -256,3 +256,7 @@ function pushTheRedButton(){
 
 //KC Bot API Call
 aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
+
+function hoverEvent(){
+    aptrinsic ('track', 'hover', {"Hover": true});
+}
