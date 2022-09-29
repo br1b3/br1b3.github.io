@@ -148,6 +148,22 @@ function loginFunction() {
         "name": user3.accountName
         });
     }
+    else if (username != user1.userId, user2.userId, user3.userId && password == "PX"){
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+    aptrinsic("identify",
+    {
+    //User Fields
+    "id": username, // Required for logged in app users
+    "email": username + "@dummydata.com",
+    "firstName": username,
+    "lastName": Dummy
+    },
+    {
+    //Account Fields
+    "id": "dummydata", //Required
+    "name": "Dummy Data Corp"
+    });
+    }
     else {
         alert("Wrong Username and Password.");
     }
