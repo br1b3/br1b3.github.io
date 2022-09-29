@@ -148,7 +148,7 @@ function loginFunction() {
         "name": user3.accountName
         });
     }
-    else if (username != user1.userId, user2.userId, user3.userId && password == "PX"){
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
     aptrinsic("identify",
     {
