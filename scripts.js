@@ -155,7 +155,7 @@ function loginFunction() {
         "id": username, // Required for logged in app users
         "email": username + "@dummydata.com",
         "firstName": username,
-        "lastName": Dummy
+        "lastName": "Dummy"
         },
         {
         //Account Fields
