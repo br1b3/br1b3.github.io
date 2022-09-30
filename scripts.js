@@ -150,20 +150,20 @@ function loginFunction() {
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "PX"){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-    aptrinsic("identify",
-    {
-    //User Fields
-    "id": username, // Required for logged in app users
-    "email": username + "@dummydata.com",
-    "firstName": username,
-    "lastName": Dummy
-    },
-    {
-    //Account Fields
-    "id": "dummydata", //Required
-    "name": "Dummy Data Corp"
-    });
-    window.alert("check console!");
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": username, // Required for logged in app users
+        "email": username + "@dummydata.com",
+        "firstName": username,
+        "lastName": Dummy
+        },
+        {
+        //Account Fields
+        "id": "dummydata", //Required
+        "name": "Dummy Data Corp"
+        });
+        window.alert("check console!");
     }
     else {
         alert("Wrong Username and Password.");
