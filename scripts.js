@@ -149,7 +149,6 @@ function loginFunction() {
         });
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "PX"){
-        setTimeout(() => { window.location.href="home.html"; }, 500);
         aptrinsic("identify",
         {
         //User Fields
@@ -163,7 +162,8 @@ function loginFunction() {
         "id": "dummydata", //Required
         "name": "Dummy Data Corp"
         });
-        window.alert("check console!");
+        alert("check console!");
+        setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else {
         alert("Wrong Username and Password.");
