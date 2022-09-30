@@ -163,6 +163,7 @@ function loginFunction() {
     "id": "dummydata", //Required
     "name": "Dummy Data Corp"
     });
+    window.alert("check console!");
     }
     else {
         alert("Wrong Username and Password.");
