@@ -280,5 +280,5 @@ function hoverEvent(){
 }
 
 //Hash
-location.hash = "hash_mark";
-document.getElementById("hash")
+//location.hash = "hash_mark";
+//document.getElementById("hash")
