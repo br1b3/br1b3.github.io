@@ -278,3 +278,7 @@ function hoverEvent(){
     aptrinsic ('track', 'hover', {"Hover": true});
     console.log("it hovers");
 }
+
+//Hash
+location.hash = "hash_mark";
+document.getElementById("hash")
