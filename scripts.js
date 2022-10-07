@@ -162,7 +162,22 @@ function loginFunction() {
         "id": "dummydata", //Required
         "name": "Dummy Data Corp"
         });
-        alert("check console!");
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+    }
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "NUM"){
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": username, // Required for logged in app users
+        "email": username + "@numbers.inc",
+        "firstName": username,
+        "lastName": "Number"
+        },
+        {
+        //Account Fields
+        "id": "numbersinc", //Required
+        "name": "Numbers Inc"
+        });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else {
