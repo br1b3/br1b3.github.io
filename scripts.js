@@ -180,6 +180,22 @@ function loginFunction() {
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password"){
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": "bgoodrum", // Required for logged in app users
+        "email": "bgoodrum@gainsight.com",
+        "firstName": "brianna",
+        "lastName": "goodrum"
+        },
+        {
+        //Account Fields
+        "id": "goodrum", //Required
+        "name": "Goodrum"
+        });
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+    }
     else {
         alert("Wrong Username and Password.");
     }
