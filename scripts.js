@@ -184,14 +184,14 @@ function loginFunction() {
         aptrinsic("identify",
         {
         //User Fields
-        "id": "bgoodrum", // Required for logged in app users
+        "id": "bgoodrum_test", // Required for logged in app users
         "email": "bgoodrum@gainsight.com",
-        "firstName": "brianna",
-        "lastName": "goodrum"
+        "firstName": "Tester Brianna",
+        "lastName": "Test Goodrum"
         },
         {
         //Account Fields
-        "id": "goodrum", //Required
+        "id": "ABCXYZ", //Required
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
