@@ -192,7 +192,6 @@ function loginFunction() {
         {
         //Account Fields
         "id": "goodrum", //Required
-        "name": "Goodrum"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
