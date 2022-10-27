@@ -9,6 +9,9 @@
     "engagementChecksumFileUrl": "https://https://br1b3.github.io/checksums.json"
     };
 
+// Setting Global Context For Site
+aptrinsic('set', 'globalContext', {"sitename":"Star Command"});
+
 //event listener for filter
 window.addEventListener('load', (event) => {
     const showAll = Array.from(document.getElementsByClassName("filterDiv"));
