@@ -46,8 +46,9 @@ function loginFunction() {
         //Account Fields
         "id": user1.account, //Required
         "name": user1.accountName
-        },
+        });
         //User Preferences
+        aptrinsic(
         {
             "trackUsage": true,
             "productUpdates": true,
