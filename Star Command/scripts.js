@@ -68,7 +68,7 @@ function showSlides(n) {
   //if left idle run slideshow automatically here
 }
 
-
+/*
 const user1 = {
     userId: "user1",
     password: "PX",
@@ -208,6 +208,7 @@ function logoutFunction() {
     window.aptrinsic('reset');
     setTimeout(() => { window.location.href="login.html"; }, 500);
 }
+*/
 
 //filter popup
 function showFilter(){
