@@ -206,7 +206,7 @@ function loginFunction() {
 //log out
 function logoutFunction() {
     window.aptrinsic('reset');
-    setTimeout(() => { window.location.href="index.html"; }, 500);
+    setTimeout(() => { window.location.href="login.html"; }, 500);
 }
 
 //filter popup
