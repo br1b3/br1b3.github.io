@@ -46,6 +46,14 @@ function loginFunction() {
         //Account Fields
         "id": user1.account, //Required
         "name": user1.accountName
+        },
+        //User Preferences
+        {
+            "trackUsage": true,
+            "productUpdates": false,
+            "guidedTours": false,
+            "surveys": true,
+            "onboardingBot": true
         });
     }
     else if (username === user2.userId && password === user2.password){
