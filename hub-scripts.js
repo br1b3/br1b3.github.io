@@ -50,10 +50,10 @@ function loginFunction() {
         //User Preferences
         {
             "trackUsage": true,
-            "productUpdates": false,
+            "productUpdates": true,
             "guidedTours": false,
-            "surveys": true,
-            "onboardingBot": true
+            "surveys": false,
+            "onboardingBot": false
         });
     }
     else if (username === user2.userId && password === user2.password){
