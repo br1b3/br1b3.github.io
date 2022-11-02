@@ -47,25 +47,6 @@ function loginFunction() {
         "id": user1.account, //Required
         "name": user1.accountName
         });
-        //User Preferences
-        put(url, data); {
- 
-            // Awaiting fetch which contains method,
-            // headers and content-type and body
-            const response = await fetch('http://api.aptrinsic.com/v1/user/preferences/user1@starcommand.unv', {
-              method: 'PUT',
-              headers: {
-                'Content-type': 'application/json', 'X-APTRINSIC-API-KEY': '8e1cabeb-7131-447a-bd9b-632277771fec'
-              },
-              body: {
-                  "trackUsage": true,
-              "productUpdates": true,
-              "guidedTours": false,
-              "surveys": false,
-              "onboardingBot": false
-            }
-        });
-        };
     }
     else if (username === user2.userId && password === user2.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
