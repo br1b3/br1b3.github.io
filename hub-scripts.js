@@ -40,7 +40,8 @@ function loginFunction() {
         "id": user1.userId, // Required for logged in app users
         "email": user1.email,
         "firstName": user1.firstName,
-        "lastName": user1.lastName
+        "lastName": user1.lastName,
+        "globalId": "global_users"
         },
         {
         //Account Fields
@@ -56,7 +57,8 @@ function loginFunction() {
         "id": user2.userId, // Required for logged in app users
         "email": user2.email,
         "firstName": user2.firstName,
-        "lastName": user2.lastName
+        "lastName": user2.lastName,
+        "globalId": "global_users"
         },
         {
         //Account Fields
@@ -72,7 +74,8 @@ function loginFunction() {
         "id": user3.userId, // Required for logged in app users
         "email": user3.email,
         "firstName": user3.firstName,
-        "lastName": user3.lastName
+        "lastName": user3.lastName,
+        "globalId": "global_users"
         },
         {
         //Account Fields
