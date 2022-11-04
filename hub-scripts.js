@@ -41,7 +41,8 @@ function loginFunction() {
         "email": user1.email,
         "firstName": user1.firstName,
         "lastName": user1.lastName,
-        "globalId": "global_users"
+        "globalId": "global_users",
+        "globalId2": "global_users"
         },
         {
         //Account Fields
@@ -58,7 +59,8 @@ function loginFunction() {
         "email": user2.email,
         "firstName": user2.firstName,
         "lastName": user2.lastName,
-        "globalId": "global_users"
+        "globalId": "global_users",
+        "globalId2": "global_users"
         },
         {
         //Account Fields
@@ -75,7 +77,8 @@ function loginFunction() {
         "email": user3.email,
         "firstName": user3.firstName,
         "lastName": user3.lastName,
-        "globalId": "global_users"
+        "globalId": "global_users",
+        "globalId2": "global_users"
         },
         {
         //Account Fields
