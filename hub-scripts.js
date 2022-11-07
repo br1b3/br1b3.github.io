@@ -165,6 +165,8 @@ function loginFunction() {
          }
 
          fetch(url, header)
+            .then(res => res.json())
+            .then(data => console.log(data))
 
          setTimeout(() => { window.location.href="home.html"; }, 500);
     }
