@@ -161,7 +161,7 @@ function loginFunction() {
          let header = {
              method: "PUT",
              body: JSON.stringify(payload),
-             'X-APTRINSIC-API-KEY': "8e1cabeb-7131-447a-bd9b-632277771fec"
+             header: 'X-APTRINSIC-API-KEY: 8e1cabeb-7131-447a-bd9b-632277771fec'
          }
 
          fetch(url, header)
