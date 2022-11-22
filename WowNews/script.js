@@ -12,3 +12,10 @@ var article = url.substring(url.lastIndexOf('/')+1);
 aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
+
+var config = {kcAllowedFuncNames : ["launchChat"]};
+
+function launchChat {
+  zE('webWidget', 'show');
+  console.log("chat opened");
+}
