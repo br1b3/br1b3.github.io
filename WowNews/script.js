@@ -15,7 +15,7 @@ aptrinsic ('track', 'article', {"Article": article});
 
 var config = {launchChat : ["google.com"]};
 
-function launchChat (){
+/*function launchChat (){
   console.log("chat opened");
   zE('webWidget', 'show');
-}
+}*/
