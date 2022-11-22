@@ -15,7 +15,7 @@ aptrinsic ('track', 'article', {"Article": article});
 
 var config = {kcAllowedFuncNames : ["launchChat"]};
 
-function launchChat {
+function launchChat (){
   zE('webWidget', 'show');
   console.log("chat opened");
 }
