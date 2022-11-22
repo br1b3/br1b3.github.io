@@ -13,9 +13,9 @@ aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
 
-var config = {kcAllowedFuncNames : ["launchChat"]};
+var config = {launchChat : ["google.com"]};
 
 function launchChat (){
-  zE('webWidget', 'show');
   console.log("chat opened");
+  zE('webWidget', 'show');
 }
