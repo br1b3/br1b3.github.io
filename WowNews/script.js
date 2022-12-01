@@ -12,10 +12,3 @@ var article = url.substring(url.lastIndexOf('/')+1);
 aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
-
-var config = {launchChat : ["google.com"]};
-
-/*function launchChat (){
-  console.log("chat opened");
-  zE('webWidget', 'show');
-}*/
