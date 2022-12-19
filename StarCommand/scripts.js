@@ -30,9 +30,11 @@ window.addEventListener('load', (event) => {
 //nav pop-up menu
 function menuFunction(item) {
     item.style.visibility = 'visible'
+    aptrinsic('set', 'user', {'language':'eu-ES'});
 }
 function menuCloseFunction(item) {
 item.style.visibility = 'hidden'
+aptrinsic('set', 'user', {'language':'en'});
 }
 
 
