@@ -10,7 +10,7 @@
     };
 
 // Setting Global Context For Site
-aptrinsic('set', 'globalContext', {"sitename":"Star Command"});
+aptrinsic('set', 'globalContext', {"sitename":""});
 
 //event listener for filter
 window.addEventListener('load', (event) => {
