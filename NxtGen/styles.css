@@ -555,7 +555,9 @@ footer>div {
     background-color: green;
 }
 
-
+textarea {
+    caret-color: blue;
+}
 
 /*Tablets*/
 @media only screen and (min-width: 600px) {
