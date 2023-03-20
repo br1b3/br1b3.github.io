@@ -5,7 +5,8 @@
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-HT89MSFYKI6R-2");
 
-console.log(aptrinsic.init);
+value = aptrinsic.init
+console.log(value);
 
 //global context
 aptrinsic('set', 'globalContext', {"sitename":"Cafe Latte"});
