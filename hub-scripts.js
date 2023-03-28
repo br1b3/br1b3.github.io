@@ -147,26 +147,6 @@ function loginFunction() {
          "id": "postman", //Required
          "name": "Postal Services"
          });
-         
-         //PUT User Preferences
-         let url = "https://api.aptrinsic.com/v1/user/preferences/" + username
-         
-         let payload = {
-            "guidedTours": true,
-            "onboardingBot": true,
-            "productUpdates": true,
-            "surveys": true,
-            "trackUsage": false
-         }
-         let header = {
-             method: "PUT",
-             body: JSON.stringify(payload),
-             header: 'X-APTRINSIC-API-KEY: 8e1cabeb-7131-447a-bd9b-632277771fec'
-         }
-
-         fetch(url, header)
-            .then(res => res.json())
-            .then(data => console.log(data))
 
          setTimeout(() => { window.location.href="home.html"; }, 500);
     }
