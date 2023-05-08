@@ -39,7 +39,7 @@ window['_fs_namespace'] = 'FS';
 })(window,document,window['_fs_namespace'],'script','user');
 
 // Setting Global Context For Site
-aptrinsic('set', 'globalContext', {"sitename":""});
+aptrinsic('set', 'globalContext', {"pagename":document.location.pathname});
 
 //event listener for filter
 window.addEventListener('load', (event) => {
