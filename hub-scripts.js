@@ -43,7 +43,7 @@ function loginFunction() {
         "lastName": user1.lastName,
         "globalId": 'global-user-id',
         "globalId2": "global_users",
-        "language": Array("en", "sp", "ch")
+        "language": "en"&&"sp"&&"ch"
         },
         {
         //Account Fields
