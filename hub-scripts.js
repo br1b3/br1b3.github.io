@@ -41,8 +41,9 @@ function loginFunction() {
         "email": user1.email,
         "firstName": user1.firstName,
         "lastName": user1.lastName,
-        globalId: 'global-user-id',
-        "globalId2": "global_users"
+        "globalId": 'global-user-id',
+        "globalId2": "global_users",
+        "language": "en", "sp", "ch"
         },
         {
         //Account Fields
