@@ -131,25 +131,25 @@ function loginFunction() {
         {
         //Account Fields
         "id": "ABCXYZ", //Required
+        "name": "ABC"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
-    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Update"){
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password2"){
         aptrinsic("identify",
         {
-         //User Fields
-         "id": username, // Required for logged in app users
-         "email": username + "@post.com",
-         "firstName": username,
-         "lastName": "Post"
-         },
-         {
-         //Account Fields
-         "id": "postman", //Required
-         "name": "Postal Services"
-         });
-
-         setTimeout(() => { window.location.href="home.html"; }, 500);
+        //User Fields
+        "id": "brianna_test", // Required for logged in app users
+        "email": "brianna.goodrum@gmail.com",
+        "firstName": "Also",
+        "lastName": "Me"
+        },
+        {
+        //Account Fields
+        "id": "ABCXYZ", //Required
+        "name": "ABC"
+        });
+        setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else {
         alert("Wrong Username and Password.");
