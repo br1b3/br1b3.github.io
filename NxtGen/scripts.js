@@ -52,11 +52,6 @@ window.addEventListener('load', (event) => {
     })
 })
 
-//users
-//let user1 = false;
-//let user2 = false;
-//let user3 = false;
-
 //nav pop-up menu
 function menuFunction(item) {
     item.style.visibility = 'visible'
