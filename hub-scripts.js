@@ -38,7 +38,7 @@ function loginFunction() {
         "globalId": 'global-user-id',
         "globalId2": "global_users",
         "language": "en sp ch"
-        }):
+        });
     }
     else if (username === user2.userId && password === user2.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
