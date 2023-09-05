@@ -3,27 +3,21 @@ const user1 = {
     password: "PX",
     email: "user1@starcommand.unv",
     firstName: "Jackson",
-    lastName: "LaRoe",
-    account: "JLaroe",
-    accountName: "LaRoe, Jackson"
+    lastName: "LaRoe"
 };
 const user2 = {
     userId: "user2",
     password: "PX",
     email: "user2@starcommand.unv",
     firstName: "Mitty",
-    lastName: "Tilbert",
-    account: "MTilbert",
-    accountName: "Tilbert, Mitty"
+    lastName: "Tilbert"
 };
 const user3 = {
     userId: "user3",
     password: "PX",
     email: "user3@starcommand.unv",
     firstName: "Alishia",
-    lastName: "Hawthorne",
-    account: "AHawthorne",
-    accountName: "Hawthorne, Alishia"
+    lastName: "Hawthorne"
 };
 
 //login
@@ -44,12 +38,7 @@ function loginFunction() {
         "globalId": 'global-user-id',
         "globalId2": "global_users",
         "language": "en sp ch"
-        },
-        {
-        //Account Fields
-        "id": user1.account, //Required
-        "name": user1.accountName
-        });
+        }):
     }
     else if (username === user2.userId && password === user2.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
@@ -62,11 +51,6 @@ function loginFunction() {
         "lastName": user2.lastName,
         "globalId": "global-user-id",
         "globalId2": "global_users"
-        },
-        {
-        //Account Fields
-        "id": user2.account, //Required
-        "name": user2.accountName
         });
     }
     else if (username === user3.userId && password === user3.password){
@@ -80,11 +64,6 @@ function loginFunction() {
         "lastName": user3.lastName,
         "globalId": "global-user-id",
         "globalId2": "global_users"
-        },
-        {
-        //Account Fields
-        "id": user3.account, //Required
-        "name": user3.accountName
         });
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "PX"){
