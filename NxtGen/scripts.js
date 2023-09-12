@@ -327,7 +327,7 @@ function contactForm(){
 function sayHello(){
     alert("Bonjour!");
 }
-
+//coulmn 1 colors
 function pushTheRedButton(){
     aptrinsic ('track', 'redButton1', {"Color": "red"});
 }
@@ -337,6 +337,13 @@ function pushTheBlueButton(){
 function pushTheGreenButton(){
     aptrinsic ('track', 'greenButton1', {"Color": "green"});
 }
+
+//column 2 colors
+function colorButton(n){
+    console.log(n);
+    aptrinsic ('track', 'colorButton', {"Color": n});
+}
+
 
 //KC Bot API Call
 aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });

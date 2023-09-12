@@ -95,7 +95,8 @@ nav>a>img {
 }
 
 #popupMenu>img {
-    width: 150px;
+    width: 100px;
+    height: 100px;
     margin-top: 60px;
     margin-left: 45px;
     border: 3px solid #203855;
@@ -541,18 +542,30 @@ footer>div {
 .calendarSlot > img {
     width: 200px;
 }
-#red, #blue, #green{
+.colorBlock{
+    display: flex;
+    justify-content: space-around;
+}
+.colorBlock > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.red, .blue, .green, .yellow{
     width:100px;
     height:100px;
 }
-#red{
+.red{
     background-color: red;
 }
-#blue{
+.blue{
     background-color: blue;
 }
-#green{
+.green{
     background-color: green;
+}
+.yellow{
+    background-color: yellow;
 }
 
 textarea {
@@ -590,7 +603,7 @@ textarea {
         padding: 3px 5px;
         position: relative;
         margin-top: 15px;
-        background-color: #919191;
+        background-color: #163990;
 
     }
 
@@ -600,7 +613,9 @@ textarea {
     }
 
     #headerProfile {
-        width: 50px;
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
         border-radius: 100%;
         border: 2px solid #203855;
     }
@@ -743,8 +758,9 @@ textarea {
     }
 
     #headerProfile {
-        width: 60px;
-        margin-top: 0px;
+        width: 50px;
+        height: 50px;
+        margin-top: 3px;
     }
 
     header>div>a>button {
