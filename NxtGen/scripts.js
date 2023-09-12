@@ -11,13 +11,13 @@
     };
 
 //Segment.io Tag
-!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="d6GRBJGgs63NCkHHXcHp7P9WLxyAOImX";;analytics.SNIPPET_VERSION="4.15.3";
+/*!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="d6GRBJGgs63NCkHHXcHp7P9WLxyAOImX";;analytics.SNIPPET_VERSION="4.15.3";
   analytics.load("d6GRBJGgs63NCkHHXcHp7P9WLxyAOImX");
   analytics.page();
-  }}();
+  }}();*/
 
   //Full Story Tag
-  window['_fs_host'] = 'fullstory.com';
+/*window['_fs_host'] = 'fullstory.com';
 window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
 window['_fs_org'] = 'o-1KHVA2-na1';
 window['_fs_namespace'] = 'FS';
@@ -37,7 +37,7 @@ window['_fs_namespace'] = 'FS';
     g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
     if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
     g._v="1.3.0";
-})(window,document,window['_fs_namespace'],'script','user');
+})(window,document,window['_fs_namespace'],'script','user');*/
 
 // Setting Global Context For Site
 aptrinsic('set', 'globalContext', {"pagename":document.location.pathname});
