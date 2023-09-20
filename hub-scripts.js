@@ -82,19 +82,35 @@ function loginFunction() {
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
-    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "NUM"){
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "ABC"){
         aptrinsic("identify",
         {
         //User Fields
-        "id": username, // Required for logged in app users
-        "email": username + "@numbers.inc",
+        "id": "Mc"+ username, // Required for logged in app users
+        "email": username + "abc.org",
         "firstName": username,
-        "lastName": "Number"
+        "lastName": "Mc"+ username
         },
         {
         //Account Fields
-        "id": "numbersinc", //Required
-        "name": "Numbers Inc"
+        "id": "ABCXYZ", //Required
+        "name": "The ABC Foundation"
+        });
+        setTimeout(() => { window.location.href="home.html"; }, 500);
+    }
+    else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "INO"){
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": "Von "+ username, // Required for logged in app users
+        "email": username + "inovations.inc",
+        "firstName": username,
+        "lastName": "Von"+ username
+        },
+        {
+        //Account Fields
+        "id": "inovations", //Required
+        "name": "Inovations Inc"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
@@ -109,8 +125,8 @@ function loginFunction() {
         },
         {
         //Account Fields
-        "id": "ABCXYZ", //Required
-        "name": "ABC"
+        "id": "gainsight", //Required
+        "name": "Gainsight"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
@@ -125,8 +141,8 @@ function loginFunction() {
         },
         {
         //Account Fields
-        "id": "ABCXYZ", //Required
-        "name": "ABC"
+        "id": "gainsight", //Required
+        "name": "Gainsight"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }

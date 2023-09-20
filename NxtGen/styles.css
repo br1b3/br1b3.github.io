@@ -835,3 +835,8 @@ textarea {
         transform: translate(837px, 375px);
     }
 }
+
+svg {
+    overflow-clip-margin: unset;
+    overflow: visible;
+}
