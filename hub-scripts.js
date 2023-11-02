@@ -28,7 +28,7 @@ function loginFunction() {
     if (username === user1.userId && password === user1.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
         //passing user and account objects:
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": user1.userId, // Required for logged in app users
@@ -42,7 +42,7 @@ function loginFunction() {
     }
     else if (username === user2.userId && password === user2.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": user2.userId, // Required for logged in app users
@@ -55,7 +55,7 @@ function loginFunction() {
     }
     else if (username === user3.userId && password === user3.password){
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": user3.userId, // Required for logged in app users
@@ -67,7 +67,7 @@ function loginFunction() {
         });
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "PX"){
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": username, // Required for logged in app users
@@ -83,7 +83,7 @@ function loginFunction() {
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "ABC"){
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": "Mc"+ username, // Required for logged in app users
@@ -99,7 +99,7 @@ function loginFunction() {
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "INO"){
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": "Von "+ username, // Required for logged in app users
@@ -115,7 +115,7 @@ function loginFunction() {
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password"){
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": "bgoodrum", // Required for logged in app users
@@ -131,7 +131,7 @@ function loginFunction() {
         setTimeout(() => { window.location.href="home.html"; }, 500);
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password2"){
-        aptrinsic("identify",
+        window.aptrinsic("identify",
         {
         //User Fields
         "id": "brianna_test", // Required for logged in app users
