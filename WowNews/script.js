@@ -12,3 +12,8 @@ var article = url.substring(url.lastIndexOf('/')+1);
 aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
+
+function checkFor(n){
+var check = n.toString;
+aptrinsic ('track', 'checkFor', {"Check": check});
+}
