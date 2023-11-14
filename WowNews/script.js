@@ -14,11 +14,13 @@ aptrinsic('set', 'globalContext', {"Article":article});
 aptrinsic ('track', 'article', {"Article": article});
 
 function checkFor(check){
+  console.log("check = " + check);
   aptrinsic ('track', 'checkFor', {"Check": check});
 }
 
  function checkFor2 () {
   var weatherBanner = getElementById("weatherForecastBanner");
+  console.log("weather banner = " + weatherBanner);
 
   if (weatherBanner = null) {
     console.log("weather banner currently unavailable");
