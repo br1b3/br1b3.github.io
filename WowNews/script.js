@@ -18,7 +18,7 @@ function checkFor(check){
 aptrinsic ('track', 'checkFor', {"Check": check});
 }
 
-function checkFor (weatherBanner) {
+function checkFor2 (weatherBanner) {
   window.onload.getElementById("weatherForecastBanner") = weatherBanner
 
   if (weatherBanner = null) {
