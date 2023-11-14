@@ -17,3 +17,16 @@ function checkFor(n){
 var check = n.toString;
 aptrinsic ('track', 'checkFor', {"Check": check});
 }
+
+function checkFor (weatherBanner) {
+  weatherBanner.getElementById("weatherForecastBanner")
+  if (weatherBanner = null) {
+    console.log("weather banner currently unavailable");
+  }
+  else if (weatherBanner = "weatherForecastBanner") {
+    aptrinsic ('track', 'checkFor', {"Check": "Weather Banner"});
+  }
+  else {
+    console.log("an error has occured");
+  }
+}
