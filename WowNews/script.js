@@ -13,7 +13,7 @@ aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
 
-var weatherBanner = DOM.getElementById("weatherForecastBanner");
+var weatherBanner = document.getElementById("weatherForecastBanner");
   console.log("weather banner = " + weatherBanner);
 
   if (weatherBanner = null) {
