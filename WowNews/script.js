@@ -13,7 +13,8 @@ aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
 
-function checkFor(check){
+function checkFor(n){
+  n.toString = check;
   console.log("check = " + check);
   aptrinsic ('track', 'checkFor', {"Check": check});
 }
