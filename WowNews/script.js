@@ -13,7 +13,20 @@ aptrinsic('set', 'globalContext', {"Article":article});
 
 aptrinsic ('track', 'article', {"Article": article});
 
-function checkFor(n){
+var weatherBanner = getElementById("weatherForecastBanner");
+  console.log("weather banner = " + weatherBanner);
+
+  if (weatherBanner = null) {
+    console.log("weather banner currently unavailable");
+  }
+  else if (weatherBanner = "weatherForecastBanner") {
+    aptrinsic ('track', 'checkFor', {"Check": "Weather Banner"});
+  }
+  else {
+    console.log("an error has occured");
+  }
+
+/*function checkFor(n){
   n.toString = check;
   console.log("check = " + check);
   aptrinsic ('track', 'checkFor', {"Check": check});
@@ -32,4 +45,4 @@ function checkFor(n){
   else {
     console.log("an error has occured");
   }
-}
+} */
