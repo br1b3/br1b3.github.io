@@ -115,7 +115,7 @@ function loginFunction() {
         "name": "Inovations Inc"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        window.aptrinsic('track', 'User Profile', {"User Id": "Von"+username, "First Name": username, "Last Name": "Von"+username, "Subscription": "Premium", "Rewards Id": "51248drr", "Rewards Points": 1400, "Promotions Opt In": "true"});
+        window.aptrinsic('track', 'User Profile', {"User Id": "Von"+username, "First Name": username, "Last Name": "Von"+username, "Subscription": "Premium", "Rewards Id": "51248drr", "Rewards Points": '1500', "Promotions Opt In": "true"});
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password"){
         window.aptrinsic("identify",
