@@ -81,7 +81,7 @@ function loginFunction() {
         "name": "Dummy Data Corp"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
-        window.aptrinsic('track', 'User Profile', {"User Id": username, "First Name": username, "Last Name": "Dummy", "Subscription": null, "Rewards Id": "1762b78", "Rewards Points": null, "Promotions Opt In": false});
+        window.aptrinsic('track', 'User Profile', {"User Id": Date(500), "First Name": true, "Last Name": '593882', "Subscription": 2579285, "Rewards Id": "1762b78", "Rewards Points": null, "Promotions Opt In": null});
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "ABC"){
         window.aptrinsic("identify",
