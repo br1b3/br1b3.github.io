@@ -81,6 +81,7 @@ function loginFunction() {
         "name": "Dummy Data Corp"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        window.aptrinsic('track', 'User Profile', {"User Id": username, "First Name": username, "Last Name": "Dummy", "Subscription": null, "Rewards Id": "1762b78", "Rewards Points": null, "Promotions Opt In": false});
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "ABC"){
         window.aptrinsic("identify",
@@ -97,6 +98,7 @@ function loginFunction() {
         "name": "The ABC Foundation"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        window.aptrinsic('track', 'User Profile', {"User Id": "Mc"+username, "First Name": username, "Last Name": "Mc"+username, "Subscription": "Basic", "Rewards Id": 86829, "Rewards Points": "720028", "Promotions Opt In": null});
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "INO"){
         window.aptrinsic("identify",
@@ -113,6 +115,7 @@ function loginFunction() {
         "name": "Inovations Inc"
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
+        window.aptrinsic('track', 'User Profile', {"User Id": "Von"+username, "First Name": username, "Last Name": "Von"+username, "Subscription": "Premium", "Rewards Id": "51248drr", "Rewards Points": 1400, "Promotions Opt In": "true"});
     }
     else if (username != user1.userId && username != user2.userId && username != user3.userId && password == "Password"){
         window.aptrinsic("identify",
