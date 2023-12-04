@@ -354,6 +354,10 @@ function hoverEvent(){
     console.log("it hovers");
 }
 
+function openBot(){
+    aptrinsic('kcb', 'show');
+}
+
 //Hash
 //location.hash = "hash_mark";
 //document.getElementById("hash")
