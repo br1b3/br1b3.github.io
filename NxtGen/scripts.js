@@ -355,7 +355,7 @@ function hoverEvent(){
 }
 
 function openBot(){
-    aptrinsic('kcb', 'show');
+    aptrinsic('kcb','show');
 }
 
 //Hash
