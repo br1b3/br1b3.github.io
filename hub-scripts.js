@@ -78,7 +78,8 @@ function loginFunction() {
         {
         //Account Fields
         "id": "dummydata", //Required
-        "name": "Dummy Data Corp"
+        "name": "Dummy Data Corp",
+        "TrialEndDate": Date("2025-05-17")
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
         window.aptrinsic('track', 'User Profile', {"User Id": username, "First Name": username, "Last Name": "Dummy", "Subscription": "Basic", "Rewards Id": 1234567, "Rewards Points": '654321', "Promotions Opt In": true});
@@ -95,7 +96,8 @@ function loginFunction() {
         {
         //Account Fields
         "id": "ABCXYZ", //Required
-        "name": "The ABC Foundation"
+        "name": "The ABC Foundation",
+        "TrialEndDate": Date("2024-02-03")
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
         window.aptrinsic('track', 'User Profile', {"User Id": "Mc"+username, "First Name": username, "Last Name": "Mc"+username, "Subscription": "Basic", "Rewards Id": 86829, "Rewards Points": "720028", "Promotions Opt In": null});
@@ -112,7 +114,8 @@ function loginFunction() {
         {
         //Account Fields
         "id": "inovations", //Required
-        "name": "Inovations Inc"
+        "name": "Inovations Inc",
+        "TrialEndDate": Date("2023-07-23")
         });
         setTimeout(() => { window.location.href="home.html"; }, 500);
         window.aptrinsic('track', 'User Profile', {"User Id": "Von"+username, "First Name": username, "Last Name": "Von"+username, "Subscription": "Premium", "Rewards Id": "51248drr", "Rewards Points": '1500', "Promotions Opt In": "true"});
