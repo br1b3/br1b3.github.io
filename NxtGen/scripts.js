@@ -347,7 +347,7 @@ function colorButton(n){
 
 
 //KC Bot API Call
-aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
+/*aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
 
 function hoverEvent(){
     aptrinsic ('track', 'hover', {"Hover": true});
@@ -356,7 +356,7 @@ function hoverEvent(){
 
 function openBot(){
     aptrinsic('kcb','show');
-}
+}*/
 
 //Hash
 //location.hash = "hash_mark";
