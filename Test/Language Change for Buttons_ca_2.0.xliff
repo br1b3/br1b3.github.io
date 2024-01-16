@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff srcLang="en" trgLang="ca" version="2.0"
+ xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0">
+ <file id="1">
+  <mda:metadata>
+   <mda:metaGroup category="gainsight_attributes">
+    <mda:meta type="strategy">html</mda:meta>
+    <mda:meta type="engagementId">6222bfbe-a5ca-4cba-98a0-8b8b51e0230e</mda:meta>
+    <mda:meta type="version">2</mda:meta>
+   </mda:metaGroup>
+  </mda:metadata>
+  <unit id="edbc7d8a-62f8-44f6-be70-87d71fcdc1b5">
+   <segment id="body">
+    <source>&lt;div id="px-editor-v2-content"&gt;&lt;section class="px-div-group" id="px-46d5aa94-183d-4710-99cd-8202b92d794a" style="display: flex; width: 100%; min-height: 170px; background-color: transparent; position: relative; padding: 0px 8px 12px;"&gt;
+	&lt;div class="px-div" id="px-6151384c-a249-4a14-a2a0-5a9bc80894c4" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p&gt;&lt;img src="https://storage.googleapis.com/froala-upload-dev/0cd27841-ba3c-4618-a1c5-25dd6abd7d6c/image/f07e548a-2eb8-4b82-8c33-cf9313b5481e.png" style="width: 560px; display: block; vertical-align: top; margin: 5px auto; text-align: center;" width="560" height="270" id="px-2bed51e4-7086-4bbb-a9ce-4c9b3805808a"&gt;&lt;/p&gt;&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class="px-div-group" id="px-a7f283a4-8e48-421e-9bf8-2b204f97119d" style="display: flex; width: 100%; min-height: 28px; background-color: transparent; position: relative; padding-top: 12px; padding-bottom: 8px;"&gt;
+		&lt;div class="px-div" id="px-cdf6d3b7-4756-4f02-bd7b-2369a767185c" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p style="text-align: center;"&gt;
+
+&lt;span style="font-size: 18px; font-family: inherit; color: rgb(255, 255, 255);"&gt;&lt;strong&gt;Feature Announcement&lt;/strong&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;&lt;/div&gt;
+&lt;/section&gt;&lt;section class="px-div-group" id="px-aa33d548-6d26-48d8-a74d-a228e5b6a88a" style="display: flex; width: 100%; min-height: 28px; padding-top: 0px; padding-bottom: 16px; background-color: transparent; position: relative;"&gt;&lt;div class="px-div" id="px-0757a5d4-acc0-417b-8b14-e4b8e2a85353" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;It’s not always possible cover all the value of a new feature in a short guide or single dialog.&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;To help quickly direct users to more information, use no-code custom action buttons to instantly open your KC Bot and launch the full article.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class="px-div-group" id="px-f8774f58-1169-4bd3-8c4e-ab7ae6b7197b" style="display: flex; width: 100%; min-height: 28px; padding-top: 0px; padding-bottom: 16px; background-color: transparent; position: relative;"&gt;&lt;div class="px-div" id="px-d36378d1-3191-4d66-84a2-22f999033008" style="background-color: transparent; width: 100%;"&gt;&lt;p&gt;&lt;br&gt;&lt;button id="pxCustomButton-7a548ede-ef32-4ed3-b717-6f67cee3b67f" style="
+padding-right: 16px;
+padding-top: 16px;
+padding-left: 16px;
+padding-bottom: 16px;
+border-radius: 16px;
+background-color: rgba(4, 112, 247, 1);
+color: #ffffff;
+font-size: 14px;
+font-family: Helvetica, Helvetica;
+font-style: unset;
+font-weight: unset;
+text-decoration: none;
+border-style: none;
+border-width: 0px;
+border-color: #0470F7;
+cursor: pointer;
+display: inline-block;"&gt;Umbrella&amp;nbsp;Search&lt;/button&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;/div&gt;</source>
+<target>&lt;div id="px-editor-v2-content"&gt;&lt;section class="px-div-group" id="px-46d5aa94-183d-4710-99cd-8202b92d794a" style="display: flex; width: 100%; min-height: 170px; background-color: transparent; position: relative; padding: 0px 8px 12px;"&gt;
+	&lt;div class="px-div" id="px-6151384c-a249-4a14-a2a0-5a9bc80894c4" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p&gt;&lt;img src="https://storage.googleapis.com/froala-upload-dev/0cd27841-ba3c-4618-a1c5-25dd6abd7d6c/image/f07e548a-2eb8-4b82-8c33-cf9313b5481e.png" style="width: 560px; display: block; vertical-align: top; margin: 5px auto; text-align: center;" width="560" height="270" id="px-2bed51e4-7086-4bbb-a9ce-4c9b3805808a"&gt;&lt;/p&gt;&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class="px-div-group" id="px-a7f283a4-8e48-421e-9bf8-2b204f97119d" style="display: flex; width: 100%; min-height: 28px; background-color: transparent; position: relative; padding-top: 12px; padding-bottom: 8px;"&gt;
+		&lt;div class="px-div" id="px-cdf6d3b7-4756-4f02-bd7b-2369a767185c" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p style="text-align: center;"&gt;
+
+&lt;span style="font-size: 18px; font-family: inherit; color: rgb(255, 255, 255);"&gt;&lt;strong&gt;Feature Announcement&lt;/strong&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;&lt;/div&gt;
+&lt;/section&gt;&lt;section class="px-div-group" id="px-aa33d548-6d26-48d8-a74d-a228e5b6a88a" style="display: flex; width: 100%; min-height: 28px; padding-top: 0px; padding-bottom: 16px; background-color: transparent; position: relative;"&gt;&lt;div class="px-div" id="px-0757a5d4-acc0-417b-8b14-e4b8e2a85353" style="background-color: transparent; width: 100%; padding: 0px;"&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;It’s not always possible cover all the value of a new feature in a short guide or single dialog.&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;span style="color: rgb(215, 218, 223);"&gt;To help quickly direct users to more information, use no-code custom action buttons to instantly open your KC Bot and launch the full article.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class="px-div-group" id="px-f8774f58-1169-4bd3-8c4e-ab7ae6b7197b" style="display: flex; width: 100%; min-height: 28px; padding-top: 0px; padding-bottom: 16px; background-color: transparent; position: relative;"&gt;&lt;div class="px-div" id="px-d36378d1-3191-4d66-84a2-22f999033008" style="background-color: transparent; width: 100%;"&gt;&lt;p&gt;&lt;br&gt;&lt;button id="pxCustomButton-7a548ede-ef32-4ed3-b717-6f67cee3b67f" style="
+padding-right: 16px;
+padding-top: 16px;
+padding-left: 16px;
+padding-bottom: 16px;
+border-radius: 16px;
+background-color: rgba(4, 112, 247, 1);
+color: #ffffff;
+font-size: 14px;
+font-family: Helvetica, Helvetica;
+font-style: unset;
+font-weight: unset;
+text-decoration: none;
+border-style: none;
+border-width: 0px;
+border-color: #0470F7;
+cursor: pointer;
+display: inline-block;"&gt;Poncho&amp;nbsp;Search&lt;/button&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;/div&gt;</target>
+   </segment>
+   <segment id="snoozeText">
+    <source>Show me later</source>
+    <target>content</target>
+   </segment>
+   <segment id="endButton">
+    <source>End Tour</source>
+    <target>content</target>
+   </segment>
+   <segment id="skipGuideButton">
+    <source>Skip Tour</source>
+    <target>content</target>
+   </segment>
+  </unit>
+  <unit id="general">
+   <segment id="previous">
+    <source>Previous</source>
+    <target>content</target>
+   </segment>
+   <segment id="next">
+    <source>Next</source>
+    <target>content</target>
+   </segment>
+   <segment id="getStartedButton">
+    <source>Get Started</source>
+    <target>content</target>
+   </segment>
+   <segment id="restartButton">
+    <source>Start Over</source>
+    <target>content</target>
+   </segment>
+   <segment id="stepCounterLabel">
+    <source>of</source>
+    <target>content</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

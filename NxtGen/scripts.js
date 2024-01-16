@@ -345,6 +345,11 @@ function colorButton(n){
     aptrinsic ('track', 'colorButton', {"Color": n});
 }
 
+function hoverEvent(){
+    aptrinsic ('track', 'hover', {"Hover": true});
+    console.log("it hovers");
+}
+
 
 //KC Bot API Call
 /*aptrinsic('bot','search', { labels: ['Product', 'Support', 'Updates'] });
