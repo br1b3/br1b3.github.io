@@ -67,6 +67,11 @@ header > div> h1 {
         width: 580px;
     }
 }
+.generalDropDownMenu {
+    background-color: orangered;
+    width: 500px;
+    height: 500px;
+}
 
 /*Desktops*/
 @media only screen and (min-width: 992px) {

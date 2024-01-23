@@ -347,7 +347,6 @@ function colorButton(n){
 
 function hoverEvent(){
     aptrinsic ('track', 'hover', {"Hover": true});
-    console.log("it hovers");
 }
 
 
