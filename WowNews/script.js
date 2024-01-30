@@ -29,7 +29,7 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
   window.addEventListener("keypress", function KeyPress(i){
     if (i === ctrl+z) {
       console.log("ctrl+z");
-    },
+    }
     else {
       console.log("nope");
     }
