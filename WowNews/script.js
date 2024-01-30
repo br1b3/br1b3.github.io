@@ -26,6 +26,14 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     console.log("an error has occured");
   }
 
+  window.addEventListener("keypress", function KeyPress(i){
+    if (i === ctrl+z) {
+      console.log("ctrl+z");
+    },
+    else {
+      console.log("nope");
+    }
+  });
 /*function checkFor(n){
   n.toString = check;
   console.log("check = " + check);
