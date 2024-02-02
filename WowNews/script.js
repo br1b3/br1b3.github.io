@@ -27,7 +27,7 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
   }
 
   window.addEventListener('keypress', function(e){
-    if (e.ctrlKey+e.z === true) {
+    if (e === (key == ctrlKey && key == "z")) {
         alert("Here it is.");
     }
     else
