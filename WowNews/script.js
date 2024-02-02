@@ -26,13 +26,12 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     console.log("an error has occured");
   }
 
-  const input = document.querySelector("input");
-
-  input.addEventListener("keypress", logKey);
-
-  function logKey(Ctrl, z) {
-    console.log("did it");
-  }
+  window.addEventListener('keypress', function(e){
+    if (e.ctrlKey && z) {
+        alert("Here it is.");
+    }
+}, false);
+ /* window.addEventListener("keypress", myScript);*/
 /*function checkFor(n){
   n.toString = check;
   console.log("check = " + check);
