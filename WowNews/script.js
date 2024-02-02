@@ -27,10 +27,14 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
   }
 
   window.addEventListener('keypress', function(e){
-    if (e.ctrlKey && z) {
+    if (e.ctrlKey+e.z === true) {
         alert("Here it is.");
     }
-}, false);
+    else
+    {
+      alert("Nope");
+    }
+});
  /* window.addEventListener("keypress", myScript);*/
 /*function checkFor(n){
   n.toString = check;
