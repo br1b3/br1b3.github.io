@@ -26,8 +26,9 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     console.log("an error has occured");
   }
 
-  window.addEventListener('keypress', function(e){
-    if (e === (key == ctrlKey && key == "z")) {
+  let key = Event.key;
+  window.addEventListener('keypress', function(key){
+    if (key == "ctrlKey" && key == "z") {
         alert("Here it is.");
     }
     else
