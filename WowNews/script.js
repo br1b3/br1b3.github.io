@@ -26,7 +26,7 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     console.log("an error has occured");
   }
 
-  let key = Event.key;
+ /* let key = Event.key;
   window.addEventListener('keypress', function(key){
     if (key == "ctrlKey" && key == "z") {
         alert("Here it is.");
@@ -35,7 +35,7 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     {
       alert("Nope");
     }
-});
+});*/
  /* window.addEventListener("keypress", myScript);*/
 /*function checkFor(n){
   n.toString = check;
