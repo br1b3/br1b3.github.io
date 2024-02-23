@@ -89,7 +89,7 @@ function loginFunction() {
         {
         //User Fields
         "id": "Mc"+ username, // Required for logged in app users
-        "email": username + "abc.org",
+        "email": username + "@abc.org",
         "firstName": username,
         "lastName": "Mc"+ username
         },
@@ -107,7 +107,7 @@ function loginFunction() {
         {
         //User Fields
         "id": "Von "+ username, // Required for logged in app users
-        "email": username + "inovations.inc",
+        "email": username + "@inovations.inc",
         "firstName": username,
         "lastName": "Von"+ username
         },
