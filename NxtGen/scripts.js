@@ -322,7 +322,8 @@ function contactForm(){
     console.log(title + ", " + name + ", "+ email + ", " + issue + ", " + explain);
     aptrinsic ('track', 'contactForm', {"Title":title, "Name":name, "Email":email, "Issue":issue, "Text":explain});
 
-    alert("continue?");
+    alert("Thank you for the submission.");
+    setTimeout(() => { window.location.reload(); }, 500);
 }
 
 function sayHello(){
