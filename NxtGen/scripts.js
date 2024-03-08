@@ -301,15 +301,12 @@ function filterSelection(i) {
 }
 
 
-/*//profile form = text
-//on click of edit => hide text and show form
-//on click save => replace text, hide form and show new text
-function editForm(item) {
-    item.style.visibility = 'visible'
-}
-function saveForm(item) {
-item.style.visibility = 'hidden'
-}*/
+
+
+
+
+
+
 
 //contact form
 function contactForm(){
@@ -326,9 +323,14 @@ function contactForm(){
     setTimeout(() => { window.location.reload(); }, 500);
 }
 
-function sayHello(){
-    alert("Bonjour!");
-}
+
+
+
+
+
+
+
+
 //coulmn 1 colors
 function pushTheRedButton(){
     aptrinsic ('track', 'redButton1', {"Color": "red"});
