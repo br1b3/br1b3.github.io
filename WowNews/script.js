@@ -26,34 +26,17 @@ var weatherBanner = document.getElementById("weatherForecastBanner");
     console.log("an error has occured");
   }
 
- /* let key = Event.key;
-  window.addEventListener('keypress', function(key){
-    if (key == "ctrlKey" && key == "z") {
-        alert("Here it is.");
-    }
-    else
-    {
-      alert("Nope");
-    }
-});*/
- /* window.addEventListener("keypress", myScript);*/
-/*function checkFor(n){
-  n.toString = check;
-  console.log("check = " + check);
-  aptrinsic ('track', 'checkFor', {"Check": check});
+function botControls(c){
+  if (c == "open"){
+    aptrinsic('kcb', 'open');
+  }
+  else if (c == "show"){
+    aptrinsic('kcb', 'show');
+  }
+  else if (c == "close"){
+    aptrinsic('kcb', 'close');
+  }
+  else if (c == "hide"){
+    aptrinsic('kcb', 'hide');
+  }
 }
-
- function checkFor2 () {
-  var weatherBanner = getElementById("weatherForecastBanner");
-  console.log("weather banner = " + weatherBanner);
-
-  if (weatherBanner = null) {
-    console.log("weather banner currently unavailable");
-  }
-  else if (weatherBanner = "weatherForecastBanner") {
-    aptrinsic ('track', 'checkFor', {"Check": "Weather Banner"});
-  }
-  else {
-    console.log("an error has occured");
-  }
-} */
